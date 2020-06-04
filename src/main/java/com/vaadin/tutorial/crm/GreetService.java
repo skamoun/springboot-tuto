@@ -1,8 +1,8 @@
 package com.vaadin.tutorial.crm;
 
-import java.io.Serializable;
-
 import org.springframework.stereotype.Service;
+
+import java.io.Serializable;
 
 @Service
 public class GreetService implements Serializable {
@@ -11,7 +11,7 @@ public class GreetService implements Serializable {
         if (name == null || name.isEmpty()) {
             return "Hello anonymous user";
         } else {
-            return "Hello " + name;
+            return "Hello : " + name;
         }
     }
 
